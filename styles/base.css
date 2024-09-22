@@ -1,8 +1,9 @@
 body {
     display: grid;
-    grid-template-rows: 14% 1fr 1fr 15%;
+    grid-template-rows: 8% 1fr 1fr 15%;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
+    font-family: 'Roboto'
 }
 
 
@@ -36,6 +37,8 @@ main {
     grid-row: 2/4;
     grid-column: 1/4;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    min-height: 800px;
 
 }
 
@@ -43,7 +46,6 @@ main {
     border: solid;
     border-radius: 15px;
     margin: 20px;
-    height: 80%;
     display: grid;
     grid-template-rows: 20% 1fr;
     overflow: hidden;
@@ -57,19 +59,42 @@ main {
     padding-top: 15px;
 }
 
+.card h3 {
+    text-align: center;
+    font-size: 3em;
+    text-decoration: wavy;
+    margin-bottom: 5px;
+}
+
 #card1 {
     grid-column: 1/3;
 }
 
-#card1lower {
+#card1upper {
     display: grid;
     grid-template-columns: 80% 20%;
 }
 
-img {
+#card1lower {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#card1upper img {
     width: 95%;
     height: 80%;
 }
+
+#card1lower img {
+    width: 80%;
+    height: 80%;
+    padding-left: 20px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
 
 
 footer {
@@ -77,6 +102,11 @@ footer {
     color: white;
     grid-row: 4;
     grid-column: 1/4;
+    text-align: center;
+}
+
+footer p {
+    font-size: 2em;
 }
 
 
