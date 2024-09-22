@@ -1,0 +1,86 @@
+body {
+    display: grid;
+    grid-template-rows: 14% 1fr 1fr 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+}
+
+
+header h1 {
+    color: white;
+    margin: 0;
+    background-color: #174e70;
+    text-align: center;
+}
+
+nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+nav a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    background-color: white;
+    grid-row: 2/4;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.card {
+    border: solid;
+    border-radius: 15px;
+    margin: 20px;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    overflow: hidden;
+}
+
+.card h1 {
+    text-align: center;
+    background-color: #174e70;
+    color: white;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+#card1 {
+    grid-column: 1/3;
+}
+
+#card1lower {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+img {
+    width: 95%;
+    height: 80%;
+}
+
+
+footer {
+    background-color: #174e70;
+    color: white;
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+
+header {
+    grid-column: 1/4;
+}
+
