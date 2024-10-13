@@ -1,0 +1,111 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header, main, footer {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 950px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #174e70;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #174e70;
+    grid-row: 4;
+    grid-column: 1/4;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav ul li {
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.open a {
+    display: block;
+}
+
+#hamburger {
+    font-size: 2rem;
+    top: 1.5rem;
+    right: 1rem;
+    color: white;
+    border: 0;
+    position: absolute;
+    background: none;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "X";
+}
+
+figure {
+    display: grid;
+    padding: 1rem;
+}
+
+figure img {
+    justify-self: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
