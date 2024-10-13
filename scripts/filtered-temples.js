@@ -77,7 +77,11 @@ const temples = [
       img.loading = 'lazy'; // Lazy loading
   
       const figcaption = document.createElement('figcaption');
-      figcaption.textContent = `${temple.templeName}, ${temple.location}. Dedicated: ${temple.dedicated}. Area: ${temple.area} sq ft.`;
+      figcaption.innerHTML = `
+      Location: ${temple.templeName}<br>
+      Dedicated: ${temple.dedicated}<br>
+      Size: ${temple.area} sq ft
+    `;
   
       figure.appendChild(img);
       figure.appendChild(figcaption);
