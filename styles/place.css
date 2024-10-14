@@ -27,4 +27,5 @@ h1 {
 }
 :root {
     --font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
 }
