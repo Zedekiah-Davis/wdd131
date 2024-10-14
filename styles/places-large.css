@@ -1,3 +1,63 @@
-@media (min-width: 45em) {
-    
+@media (min-width: 550px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9);
+        margin-left: 2%;
+        color: black;
+        max-width: 250px;
+    }
+
+    h2 {
+        background-color: #FED141;
+        color: #001344;
+        font-size: xx-large;
+        text-align: left;
+    }
+    .data h2 {
+        margin-left: -30px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        right: 20px;
+    }
+
+    .weather h2 {
+        margin-left: -30px; 
+        
+    }
+
+    .weather h2::after {
+        content: "⛅";
+        padding-left: 2rem;
+    }
+
+    .weather img {
+        display: none;
+    }
 }

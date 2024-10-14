@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/places-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
     <h1 class="title">Ecuador</h1>
     <main>
-        <picture>
-            <source srcset="images/hero-large.webp">
-            <img src="images/hero-small.jpg" alt="Jaguar" width="500" height="750">
-        </picture>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 550px )" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Jaguar">
+            </picture>
+        </div>
         <div class="data">
             <h2>Data</h2>
             <div class="info-table">
-                <div class="label">
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                </div>
-                <div class="value">
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                </div>
+                <ul><b>Area:</b>
+                    <p>283,561 sq km</p>
+                </ul>
+                <ul><b>Population:</b>
+                    <p>18,179,281</p>
+                </ul>
+                <ul><b>Capital:</b>
+                    <p>Quito</p>
+                </ul>
+                <ul><b>Languages:</b>
+                    <p>Spanish</p>
+                </ul>
+                <ul><b>Currency:</b>
+                    <p>US Dollar</p>
+                </ul>
+                <ul><b>Time Zone:</b>
+                    <p>GMT-5</p>
+                </ul>
+                <ul><b>Calling Code:</b>
+                    <p>+593</p>
+                </ul>
+                <ul><b>Internet TLD:</b>
+                    <p>.ec</p>
+                </ul>
             </div>
+        </div>
         </div>
         <div class="weather">
             <h2>Weather</h2>
             <div class="weather-icon">⛅</div>
             <div class="info-table">
-                <div class="label">
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                    <ul>Label</ul>
-                </div>
-                <div class="value">
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                    <ul>Value</ul>
-                </div>
+                <ul><b>Temperature:</b>
+                    <p id="temp"> <span id="current-temp"></span> °C</p>
+                </ul>
+                <ul><b>Conditions:</b>
+                    <p id="conditions"> <span id="current-condition"></span></p>
+                </ul>
+                <ul><b>Wind:</b>
+                    <p id="wind"> <span id="windspeed"></span> km/hr</p>
+                </ul>
+                <ul><b>Wind Chill:</b>
+                    <p id="wind-chill"> <span id="current-wind-chill"></span> °C</p>
+                </ul>
             </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -59,4 +74,5 @@
         <p id="lastModified">Last Modified:</p>
     </footer>
 </body>
+
 </html>
