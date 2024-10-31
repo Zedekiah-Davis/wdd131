@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Review Form</title>
+   <meta name="description" content="Week 5 Acitivity: Product Review Form">
+   <meta name="author" content="Zedekiah Davis">
+   <link rel="stylesheet" href="styles/form.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+   <script src="scripts/form.js" defer></script>
+</head>
+<body>
+   <header><h1>Product Review</h1></header>
+   <nav></nav>
+   <main>
+        <form method="get" action="review.html" class="f1" id="f1">
+            <label class="spacing">Product Name*
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select>
+            </label>
+
+            <div class="wrapper">Overall Rating*</div>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required>
+                    <label for="star-a"></label>
+              
+                    <input type="radio" name="stars" id="star-b" value="4" required>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3" required>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2" required>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1" required>
+                    <label for="star-e"></label>
+                </div>
+            
+
+            
+            <label class="spacing">Date of Installation*
+                <input type="date" id="dateOfInstallation" name="dateOfInstallation" required>
+            </label>
+            
+
+            <div class="wrapper">Which features did you find useful in the product? <br><span>(Check all that apply)</span></div>
+                <label class="cbox"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label class="cbox"><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                <label class="cbox"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label class="cbox"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            
+            <label class="spacing" id="textarea">Written Review <span>(Optional)</span>
+                <textarea id="reviewTextarea" name="reviewTextarea" rows="5" cols="30"></textarea></label>
+
+            <label class="spacing" id="name">Your Name <span>(Optional)</span>
+                <input type="text" id="userName" name="userName"></label>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+   </main>
+   <footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        Zedekiah Davis
+        Idaho
+    </p>
+    <p id="lastModified">
+
+    </p>
+</footer>
+</body>
+</html>
