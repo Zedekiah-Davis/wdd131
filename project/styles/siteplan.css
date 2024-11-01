@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #4169E1; /* Royal Blue */
+    --bg-color: #D8BFD8;      /* Soft Violet */
+    --heading-color: #E6E6FA; /* Light Lavender */
+    --secondary-color: #1A1A40; /* Deep Blue */
+
+    --heading-font: "Roboto", sans-serif;
+    --heading-font-weight: 400;
+    --paragraph-font: "Roboto", sans-serif;
+    --paragraph-font-weight: 100;
+}
+
+/* Layout and Body */
+body {
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+/* Typography */
+h1, footer {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+section h3 {
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+#headingsFont {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+}
+
+#pFont {
+    font-family: var(--paragraph-font);
+    font-weight: var(--paragraph-font-weight);
+}
+
+/* Section and Content Spacing */
+section {
+    padding: 2rem;
+}
+
+section p, ul, img {
+    margin-left: 2rem;
+}
+
+/* Color Schema Section */
+#colorSchema p {
+    margin-left: 0;
+}
+
+#colorHeadings {
+    font-size: 28px;
+    color: var(--heading-color);
+    background-color: var(--primary-color);
+}
+
+#colorParagraphs {
+    color: var(--secondary-color);
+}
+
+#colorBackground {
+    color: var(--bg-color);
+    background-color: var(--secondary-color);
+}
+
+#colorHeadingsBg {
+    color: var(--primary-color);
+}
+
+/* Images */
+section img {
+    max-width: 900px;
+    padding-bottom: 1rem;
+    border: 2px solid black;
+}
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+    grid-row: 4;
+    grid-column: 1/4;
+}
