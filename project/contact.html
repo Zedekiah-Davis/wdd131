@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Custom Keyboards Hub</title>
+   <meta name="description" content="A resource site for custom keyboard enthusiasts and hobbyists.">
+   <meta name="author" content="John Joemar Lim">
+   <link rel="stylesheet" href="styles/keyboards.css">
+   <link rel="stylesheet" href="styles/keyboards-large.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+   <script src="scripts/keyboards.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="flexy">
+         <img src="images/logo.webp" alt="Custom Keyboards Logo" id="logo" loading="lazy">
+         <h1>Custom Keyboards</h1>
+         <button id="menu"></button>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="keyboards.html" id="home">Home</a></li>
+            <li><a href="keyboard-showcase.html" id="Showcase">Showcase</a></li>
+            <li><a href="contact.html" id="contact">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <main>
+      <main>
+         <h2>Contact Us</h2>
+         <form method="get" action="thanks.html" class="contactForm">
+             <label>First Name* <input type="text" name="fname" required></label>
+             <label>Last Name* <input type="text" name="lname" required></label>
+             <label>Phone <input type="tel" name="phone" placeholder="0834567890"></label>
+             <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+             <label class="spacing" id="textarea">Inquiry*
+                 <textarea id="inquiryTextarea" name="inquiryTextarea" rows="5" cols="30" required></textarea></label>
+ 
+             <input type="submit" value="Send Inquiry">
+         </form>
+    </main>
+   </main>
+   
+   <footer>
+    <p>
+        &copy; <span id="currentyear"></span>
+        Zedekiah Davis
+        Idaho
+    </p>
+    <p id="lastModified">
+
+    </p>
+</footer>
+</body>
+</html>

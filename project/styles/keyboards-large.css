@@ -1,0 +1,36 @@
+@media (min-width: 45em) {
+    header {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .images-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        place-items: center;
+        padding-top: 1rem;
+    }
+}
